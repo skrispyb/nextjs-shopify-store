@@ -31,8 +31,6 @@ jobs:
         run: yarn
       - name: Build project
         run: yarn run build
-      - name: Export static files
-        run: yarn run export
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy
