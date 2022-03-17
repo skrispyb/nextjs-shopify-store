@@ -116,7 +116,7 @@ const ProductPage = (props) => {
 };
 
 export async function getServerSideProps({ query }) {
-  console.log(query.productId[0]);
+  console.log("product id", query.productId[0]);
   const product = await client.product.fetch(query.productId[0]);
   return {
     props: {
